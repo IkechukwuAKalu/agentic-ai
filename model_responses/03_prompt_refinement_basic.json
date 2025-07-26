@@ -1,0 +1,12 @@
+{
+  "vegetarian": "not satisfied",
+  "vegan": "not satisfied",
+  "gluten-free": "not satisfied",
+  "dairy-free": "not satisfied",
+  "nut-free": "satisfied",
+  "egg-free": "satisfied",
+  "low-sodium": "not satisfied",
+  "keto": "not satisfied",
+  "paleo": "not satisfied",
+  "kosher": "undeterminable"
+}

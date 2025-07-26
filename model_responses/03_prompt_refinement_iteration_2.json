@@ -1,0 +1,52 @@
+{
+  "vegetarian": {
+    "classification": "not satisfied",
+    "explanation": "Contains ground beef, which is meat and not vegetarian.",
+    "critical_ingredients": ["1 lb ground beef"]
+  },
+  "vegan": {
+    "classification": "not satisfied",
+    "explanation": "Contains ground beef, Parmesan cheese, and possibly butter/oil, all animal products.",
+    "critical_ingredients": ["1 lb ground beef", "Grated Parmesan cheese"]
+  },
+  "gluten-free": {
+    "classification": "not satisfied",
+    "explanation": "Contains spaghetti made from wheat, which contains gluten.",
+    "critical_ingredients": ["1 lb spaghetti"]
+  },
+  "dairy-free": {
+    "classification": "not satisfied",
+    "explanation": "Contains Parmesan cheese, a dairy product.",
+    "critical_ingredients": ["Grated Parmesan cheese"]
+  },
+  "nut-free": {
+    "classification": "satisfied",
+    "explanation": "No nuts or peanuts are listed in the ingredients.",
+    "critical_ingredients": []
+  },
+  "egg-free": {
+    "classification": "satisfied",
+    "explanation": "No eggs or egg-containing ingredients are listed.",
+    "critical_ingredients": []
+  },
+  "low-sodium": {
+    "classification": "not satisfied",
+    "explanation": "Contains salt, and ingredients like broth and cheese can be high in sodium; the recipe's sodium level may be high depending on quantities used.",
+    "critical_ingredients": ["Salt", "beef broth", "Parmesan cheese"]
+  },
+  "keto": {
+    "classification": "not satisfied",
+    "explanation": "Contains spaghetti (carbohydrate-rich) and possibly other high-carb ingredients; not suitable for a low-carb diet.",
+    "critical_ingredients": ["spaghetti"]
+  },
+  "paleo": {
+    "classification": "not satisfied",
+    "explanation": "Contains spaghetti (grain product), cheese, and possibly processed ingredients like canned tomatoes and broth.",
+    "critical_ingredients": ["spaghetti", "crushed tomatoes", "beef broth"]
+  },
+  "kosher": {
+    "classification": "undeterminable",
+    "explanation": "Depends on the source and certification of ingredients such as beef, cheese, broth, and pasta; no specific kosher certification info provided.",
+    "critical_ingredients": ["ground beef", "Parmesan cheese", "beef broth", "spaghetti"]
+  }
+}
