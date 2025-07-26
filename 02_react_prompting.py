@@ -3,10 +3,10 @@ import pandas as pd
 import re
 
 from models.c_openai import openai_client, OpenAIModels
-from mock_apis.competitor_pricing import get_competitor_pricing_data
-from mock_apis.promotions import call_promotions_api
-from mock_apis.sales import call_sales_api, get_sales_data
-from mock_apis.weather import call_weather_api, get_weather_data
+from mock_data.competitor_pricing import get_competitor_pricing_data
+from mock_data.promotions import call_promotions_api
+from mock_data.sales import call_sales_api, get_sales_data
+from mock_data.weather import call_weather_api, get_weather_data
 from utils.calculator import calculate
 from utils.completions import get_completion, update_message_history
 from utils.display import c_print, configure_panda, print_in_box, plot_competitor_pricing_data, plot_sales_data, plot_weather_data
