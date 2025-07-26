@@ -46,5 +46,5 @@ def gen_system_prompt(prompt = None) -> str:
     return prompt if prompt else "You are a helpful assistant"
 
 
-def update_message_history(message_history: list, llm_response: str) -> None:
-    message_history.append({"role": "system", "content": llm_response})
+def update_message_history(message_history: list, llm_response: str, role = "assistant") -> None:
+    message_history.append({"role": role, "content": llm_response})

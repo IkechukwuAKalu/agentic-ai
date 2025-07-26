@@ -3,12 +3,12 @@ import pandas as pd
 
 from models.c_openai import openai_client, OpenAIModels
 from models.ollama import ollama_client, OllamaModels
-from mock_apis.competitor_pricing import call_competitor_pricing_api, get_competitor_pricing_data
+from mock_apis.competitor_pricing import get_competitor_pricing_data
 from mock_apis.promotions import call_promotions_api
-from mock_apis.sales import call_sales_api, get_sales_data
-from mock_apis.weather import call_weather_api, get_weather_data
+from mock_apis.sales import get_sales_data
+from mock_apis.weather import get_weather_data
 from utils.completions import get_completion
-from utils.display import c_print, configure_panda, print_in_box, plot_competitor_pricing_data, plot_sales_data, plot_weather_data
+from utils.display import c_print, configure_panda, plot_competitor_pricing_data, plot_sales_data, plot_weather_data
 
 
 # Set the client and model
