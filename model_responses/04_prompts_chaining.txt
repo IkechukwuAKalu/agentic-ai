@@ -1,0 +1,26 @@
+[ClaimInformation(claim_id='C001', name='John Smith', vehicle='2018 Toyota Camry', loss_desc='While driving on the highway, a rock hit my windshield and caused a small chip about the size of a quarter. No other damage was observed.', damage_area=['windshield']), ClaimInformation(claim_id='C002', name='Sarah Johnson', vehicle='2020 Honda Civic', loss_desc='Someone hit my car while parked at the grocery store, denting the rear bumper and breaking the taillight.', damage_area=['rear', 'bumper', 'glass']), ClaimInformation(claim_id='C003', name='Michael Rodriguez', vehicle='2022 Ford F-150', loss_desc='I was involved in a serious collision at an intersection. The front of my truck is severely damaged, including the hood, bumper, radiator, and engine compartment. The airbags deployed and the vehicle is not drivable.', damage_area=['front', 'hood', 'bumper']), ClaimInformation(claim_id='C004', name='Emma Williams', vehicle='2019 Subaru Outback', loss_desc='My car was damaged in a hailstorm. There are multiple dents on the hood, roof, and trunk. The side mirrors were also damaged and one window has a small crack.', damage_area=['hood', 'roof', 'trunk', 'side', 'glass']), ClaimInformation(claim_id='C005', name='David Brown', vehicle='2021 Tesla Model 3', loss_desc="Someone keyed my car in the parking lot. There are deep scratches along both doors on the driver's side.", damage_area=['door'])]
+
+[SeverityAssessment(severity='Minor', est_cost=150.0), SeverityAssessment(severity='Moderate', est_cost=1200.0), SeverityAssessment(severity='Major', est_cost=15000.0), SeverityAssessment(severity='Moderate', est_cost=3500.0), SeverityAssessment(severity='Minor', est_cost=500.0)]
+
+[ClaimRouting(claim_id='C001', queue='glass'), ClaimRouting(claim_id='C002', queue='material_damage'), ClaimRouting(claim_id='C003', queue='total_loss'), ClaimRouting(claim_id='C004', queue='material_damage'), ClaimRouting(claim_id='C005', queue='material_damage')]
+
+  claim_id               name              vehicle  \
+0     C001         John Smith    2018 Toyota Camry   
+1     C002      Sarah Johnson     2020 Honda Civic   
+2     C003  Michael Rodriguez      2022 Ford F-150   
+3     C004      Emma Williams  2019 Subaru Outback   
+4     C005        David Brown   2021 Tesla Model 3   
+
+                                                                                                                                                                                                                  loss_desc  \
+0                                                                                 While driving on the highway, a rock hit my windshield and caused a small chip about the size of a quarter. No other damage was observed.   
+1                                                                                                                 Someone hit my car while parked at the grocery store, denting the rear bumper and breaking the taillight.   
+2  I was involved in a serious collision at an intersection. The front of my truck is severely damaged, including the hood, bumper, radiator, and engine compartment. The airbags deployed and the vehicle is not drivable.   
+3                                                            My car was damaged in a hailstorm. There are multiple dents on the hood, roof, and trunk. The side mirrors were also damaged and one window has a small crack.   
+4                                                                                                                  Someone keyed my car in the parking lot. There are deep scratches along both doors on the driver's side.   
+
+                        damage_area  severity  est_cost            queue  
+0                      [windshield]     Minor     150.0            glass  
+1             [rear, bumper, glass]  Moderate    1200.0  material_damage  
+2             [front, hood, bumper]     Major   15000.0       total_loss  
+3  [hood, roof, trunk, side, glass]  Moderate    3500.0  material_damage  
+4                            [door]     Minor     500.0  material_damage
