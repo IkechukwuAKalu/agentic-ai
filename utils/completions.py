@@ -30,7 +30,7 @@ def get_completion(client, model, user_prompt, messages = [], system_prompt = No
 
 def build_messages(message_history: list, user_prompt: str, system_prompt: str) -> None:
     """
-    Function to build messages. This is usesful when there is a message history
+    Function to build messages. This is useful when there is a message history
     """
 
     if message_history:
