@@ -1,3 +1,5 @@
+# Demand‑Spike Detective - Chain-of-Thought Prompting
+
 import json
 import pandas as pd
 
