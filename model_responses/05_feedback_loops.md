@@ -12,7 +12,7 @@ def process_data(numbers, mode='average'):
 ```
 
 ➡️  Test results: 5 passed, 7 failed
-
+```
 Failed Test Cases:
 Test #5
   Inputs: ([], 'sum')
@@ -42,7 +42,7 @@ Test #11
   Inputs: ([], 'median')
   Expected: None
   Actual: 0
-
+```
 
 👉🏾 Improved Code (Loop #1):
 ```python
