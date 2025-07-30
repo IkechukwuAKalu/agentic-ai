@@ -76,4 +76,4 @@ def process_data(numbers, mode='average'):
 ➡️  Test results: 12 passed, 0 failed
 
 
-Success! All tests passed ✅
+✅ Success! All tests passed

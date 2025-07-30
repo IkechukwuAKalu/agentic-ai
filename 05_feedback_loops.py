@@ -243,7 +243,7 @@ current_feedback = initial_formatted_feeback
 
 for i in range(MAX_ITERATIONS):
     if iterations[-1]["test_results"]["failed"] == 0:
-        print("\nSuccess! All tests passed ✅\n")
+        print("\n✅ Success! All tests passed\n")
         break
 
     feedback_prompt = f"""
