@@ -1,0 +1,23 @@
+---
+Emergency Aid Dispatch system
+---
+
+flowchart TD
+  Start[Start] --> StrategicAgent[StrategicAgent: Startegic Aid Coordinator]
+  StrategicAgent --> InventoryAgent
+  InventoryAgent --> StrategicAgent
+  StrategicAgent --> WeatherAgent
+  WeatherAgent --> StrategicAgent
+  StrategicAgent --> RoadAgent
+  RoadAgent --> StrategicAgent
+  StrategicAgent --> DispatchDecision{Ready to Dispatch?}
+  DispatchDecision -- Yes --> DispatchAgent[Dispatch Agent Executes]
+  DispatchDecision --> |No| Replan[StrategicAgent: Replan or Wait]
+  DispatchAgent --> Confirm[StrategicAgent: Confirm Delivery]
+  Confirm --> End[End]
+
+  subgraph Pararell Information Gathering
+    InventoryAgent
+    WeatherAgent
+    RoadAgent
+  end
