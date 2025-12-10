@@ -116,5 +116,5 @@ def plot_weather_data(weather_df: pandas.DataFrame):
     plt.show()
 
 
-def c_print(data):
+def c_print(*data):
     print(data)

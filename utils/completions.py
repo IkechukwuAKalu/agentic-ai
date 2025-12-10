@@ -25,7 +25,7 @@ def get_completion(client, model, user_prompt, messages = [], system_prompt = No
 
         return response_message, messages
     except Exception as e:
-        return f"An error occurred while getting chat completion: {e}"
+        return f"An error occurred while getting chat completion: {e}", messages
 
 
 def build_messages(message_history: list, user_prompt: str, system_prompt: str) -> None:
