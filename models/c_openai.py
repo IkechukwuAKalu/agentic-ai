@@ -7,8 +7,8 @@ from openai import OpenAI
 load_dotenv(override = True)
 
 # Replace the base URL with that of OpenAI if you are using a direct integration
-# OPENAI_BASE_URL = "https://openai.vocareum.com/v1"
-OPENAI_BASE_URL = "https://api.openai.com/v1"
+OPENAI_BASE_URL = "https://openai.vocareum.com/v1"
+# OPENAI_BASE_URL = "https://api.openai.com/v1"
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 
