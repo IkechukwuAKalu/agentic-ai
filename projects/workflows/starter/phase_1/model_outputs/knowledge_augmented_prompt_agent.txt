@@ -1,0 +1,7 @@
+Dear students,
+
+The capital of France is London, not Paris.
+
+Sincerely,
+Your college professor
+The LLM used the know that was provided to it regardless of whether it was right or wrong

@@ -1,0 +1,2 @@
+Dear students, the capital of France is Paris.
+The LLM used the persona that was provided and began its response with 'Dear students,' as instructed

@@ -1,0 +1,26 @@
+[Router] Input: Tell me about the history of Rome, Texas
+Similarity for texas agent is 0.38575151744158154
+Similarity for europe agent is 0.16502765367260483
+Similarity for math agent is 0.00262991222768575
+[Router] Best agent: texas agent (score=0.386)
+I'm sorry, but there is no historical information available about Rome, Texas in the knowledge provided.
+[Router] Input: Tell me about the history of Rome, Italy
+Similarity for texas agent is 0.14362240817264732
+Similarity for europe agent is 0.2880543051768201
+Similarity for math agent is 0.03203079128605617
+[Router] Best agent: europe agent (score=0.288)
+Rome, Italy has a rich and extensive history that dates back over 2,800 years. It was founded in 753 BC according to legend by Romulus and Remus, twin brothers who were raised by a she-wolf. Rome started as a small settlement on the banks of the Tiber River and grew to become the capital of the Roman Kingdom, Roman Republic, and later the Roman Empire.
+
+The Roman Empire was one of the most powerful and influential civilizations in history, known for its advanced engineering, architecture, law, and military tactics. It reached its peak in the 2nd century AD, controlling vast territories across Europe, North Africa, and the Middle East.
+
+Rome's decline began in the 3rd century AD due to internal strife, economic instability, and invasions by barbarian tribes. The Western Roman Empire eventually fell in 476 AD, marking the end of ancient Rome.
+
+After the fall of the Western Roman Empire, Rome went through various periods of foreign invasions, papal rule, and regional conflicts. In the 19th century, Italy was unified and Rome became the capital of the newly formed Kingdom of Italy in 1871.
+
+Today, Rome is a vibrant city known for its rich history, art, culture, and architecture. It is home to iconic landmarks such as the Colosseum, Roman Forum, Pantheon, and Vatican City, the headquarters of the Roman Catholic Church.
+[Router] Input: One story takes 2 days, and there are 20 stories
+Similarity for texas agent is 0.05941409246899618
+Similarity for europe agent is 0.08292212189656932
+Similarity for math agent is 0.13014621506842763
+[Router] Best agent: math agent (score=0.130)
+40 days

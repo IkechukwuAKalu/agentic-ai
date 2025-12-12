@@ -17,5 +17,4 @@ direct_agent_response = direct_agent.respond(prompt)
 # Print the response from the agent
 print(direct_agent_response)
 
-# TODO: 5 - Print an explanatory message describing the knowledge source used by the agent to generate the response
 print("The LLM uses general knowledge from the selected LLM model")

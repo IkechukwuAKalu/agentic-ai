@@ -38,4 +38,6 @@ action_planning_agent = ActionPlanningAgent(openai_api_key, knowledge)
 
 prompt = "One morning I wanted to have scrambled eggs"
 
-print(action_planning_agent.extract_steps_from_prompt(prompt))
+steps = action_planning_agent.extract_steps_from_prompt(prompt)
+
+print("\n".join(steps))
