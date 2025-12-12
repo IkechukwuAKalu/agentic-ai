@@ -8,6 +8,7 @@ from openai import OpenAI
 
 base_url = "https://openai.vocareum.com/v1"
 llm_model = "gpt-3.5-turbo"
+# llm_model = "gpt-4.1-nano"
 embedding_llm_model = "text-embedding-3-large"
 
 
@@ -238,23 +239,27 @@ class EvaluationAgent:
         self.worker_agent = worker_agent
         self.max_interactions = max_interactions
 
-    def evaluate(self, initial_prompt):
+    def evaluate(self, initial_prompt, worker_agent_response=None):
         # This method manages interactions between agents to achieve a solution.
         client = OpenAI(base_url=base_url, api_key=self.openai_api_key)
         prompt_to_evaluate = initial_prompt
+        response_from_worker = worker_agent_response
 
         for i in range(self.max_interactions):
             print(f"\n--- Interaction {i+1} ---")
 
             print(" Step 1: Worker agent generates a response to the prompt")
             print(f"Prompt:\n{prompt_to_evaluate}")
-            response_from_worker = self.worker_agent.respond(prompt_to_evaluate)
+            
+            if response_from_worker is None:
+                response_from_worker = self.worker_agent.respond(prompt_to_evaluate)
+
             print(f"Worker Agent Response:\n{response_from_worker}")
 
             print(" Step 2: Evaluator agent judges the response")
             eval_prompt = (
                 f"Does the following answer: {response_from_worker}\n"
-                f"Meet this criteria: {self.evaluation_criteria}"
+                f"Meet this criteria: {self.evaluation_criteria}\n"
                 f"Respond starting with either Yes or No, and the reason why it does or doesn't meet the criteria."
             )
             response = client.chat.completions.create(
@@ -295,6 +300,7 @@ class EvaluationAgent:
                     f"It has been evaluated as incorrect.\n"
                     f"Make only these corrections, do not alter content validity: {instructions}"
                 )
+                response_from_worker = None
         return {
             "final_response": response_from_worker,
             "evaluation": evaluation,
